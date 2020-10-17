@@ -1,6 +1,8 @@
 # gif_to_excel
 Command line app for turning an animated gif into an animated Excel macro spreadsheet (xlsm). For security reasons Excel won't run the auto play macro if you open the resulting xlsm file in preview mode and you will have to enable vba/macros to see the animation.
 
+The application itself is ridiculous but the purpose is to inspire other Python coders to check out what is possible using xlsxwriter and the pillow packages.
+
 ## See example output below
 
 ### A simple animated gif
@@ -14,7 +16,7 @@ Command line app for turning an animated gif into an animated Excel macro spread
 ## Usage
 
 ```shell
-gif_to_excel.py <input_file> <output_file> <column_width <column_width> <row_height>
+gif_to_excel.py <input_file> <output_file> --column-width=<column_width <column_width> --row-height=<row_height>
 ```
 
 * input_file is the path to the animated gif to convert
